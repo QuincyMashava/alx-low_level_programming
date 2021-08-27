@@ -1,5 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+
 /**
  *main - print all possible different combination of two two-digits
  *Return: Always 0 sucess
@@ -7,36 +8,26 @@
 
 int main(void)
 {
-
-int c;
-int d;
-int e;
-int f =0;
-
-while(f <10){
-e = 0;
-while(e<10){
-
-d = 0;
-while(d <0){
-c = 0;
-while(c <0){
-if(!(f == c && e == d)){
-putchar('0' + f );
-putchar('0' + e);
+int i, j;
+for (i = 0; i < 100; i++)
+{
+for (j = 0; j < 100; j++)
+{
+if (i < j)
+{
+putchar ((i / 10) + 48);
+putchar ((i % 10) + 48);
 putchar(' ');
-putchar('0' + d);
-putchar('0' + c);
-
-if(!(f + e == 18 && c +d ++ 17 && d == 9)){
+putchar((j / 10) + 48);
+putchar((j % 10) + 48);
+if (i != 98 || j != 98)
+{
 putchar(',');
 putchar(' ');
 }
-}c++;
-}d++;
-}e++;
-}f++;
-}   
-putchar('\n');
+}
+}
+}
+putchar ('\n');
 return (0);
 }
