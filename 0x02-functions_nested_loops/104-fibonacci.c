@@ -23,7 +23,7 @@ b = sum;
 printf(", %lu", sum);
 }
 
-a_head = a / 1000000000; /* break larger num into 2 parts*/
+a_head = a / 1000000000; /* break larger num into 2 parts */
 a_tail = a % 1000000000;
 b_head = b / 1000000000;
 b_tail = b % 1000000000;
