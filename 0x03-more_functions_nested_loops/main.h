@@ -6,7 +6,7 @@
  * @c: character to put to standard output
  */
 
-int _putchar(int c);
+int _putchar(char c);
 
 /**
  * _isupper - checks for uppercase character
