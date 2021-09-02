@@ -1,12 +1,12 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef MAIN_H
+#define MAIN_H
 
 /**
  * _putchar - puts character to standard output
  * @c: character to put to standard output
  */
 
-int _putchar(char c);
+int _putchar(int c);
 
 /**
  * _isupper - checks for uppercase character
