@@ -7,31 +7,18 @@
 
 void print_number(int n)
 {
-
-int d = 1, i = 0, ii = 0;
-
+// If number is smaller than 0, put a - sign
+// and change number to positive
 if (n < 0)
 {
-_putchar('-');
+putchar('-');
 n = -n;
 }
-
-while (n / d != 0)
-{
-d *= 10;
-i++;
-}
-d = d / 10;
-
-while (ii < i)
-{
-_putchar('0' + n / d);
-n = n - (n / d) * d;
-d = d / 10;
-ii++;
-}
-
-if (i == 0)
-_putchar('0' + n);
-
+  
+// Remove the last digit and recur
+if (n/10)
+print(n/10);
+  
+// Print the last digit
+putchar(n%10 + '0');
 }
