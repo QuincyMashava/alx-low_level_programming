@@ -8,8 +8,6 @@
 
 int _isupper(int c)
 {
-if (c >= 'A' && c <= 'Z')
-return (1);
+  return (c >= 65 && c <= 90);
 
-return (0);
 }
