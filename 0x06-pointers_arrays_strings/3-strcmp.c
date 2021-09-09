@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
-* _strcmp - compare two strings
-* @s1: one string
-* @s2: one string
-* Return: int that tells num spaces in between
+*_strcmp - compare two strings
+*@s1: one string
+*@s2: one string
+*Return: int that tells num spaces in between
 */
 
 int _strcmp (char *s1 , char *s2)
