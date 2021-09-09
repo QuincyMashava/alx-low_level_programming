@@ -28,7 +28,7 @@ while (tens >= 1)
 {
 digit = positive / tens;
 _putchar(digit + '0');
-positive = (positive - (tens * digit));
+positive = (positive - (tens *digit));
 tens /= 10;
 }
 }
