@@ -40,7 +40,7 @@ nwords = get_nwords(str);
 if (nwords == 0)
 return (NULL);
 ++nwords;
-p = (char **) malloc(nwords * sizeof(char *));
+p = (char **) malloc(nwords *sizeof(char *));
 if (p == NULL)
 return (NULL);
 i = j = 0;
