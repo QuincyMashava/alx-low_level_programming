@@ -41,7 +41,7 @@ len += _strlen(av[i]);
 len += (ac + 1); /* add space for newlines and null terminator */
 
 /* allocate memory and free if error */
-s = malloc(len * sizeof(char));
+s = malloc(len *sizeof(char));
 
 if (s == NULL)
 {
