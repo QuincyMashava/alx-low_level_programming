@@ -1,6 +1,6 @@
 #include <stdarg.h> /* va_* */
 #include <stdio.h> /* printf */
-#include "main.h"
+#include "variadic_functions.h"
 
 /**
 * print_numbers - print varying amount of numbers
