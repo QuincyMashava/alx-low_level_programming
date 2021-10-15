@@ -28,10 +28,9 @@ if ((b[i] != '0') && (b[i] != '1'))
 return (sum);
 
 if (b[i] == '1')
-sum += (1 *(1 << len));
+sum += (1 * (1 << len));
 i++;
 len--;
 }
 
 return (sum);
-}
