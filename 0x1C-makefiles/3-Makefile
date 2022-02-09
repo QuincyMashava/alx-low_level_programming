@@ -1,0 +1,30 @@
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC: .c=.o)
+NAME = school
+RM = rm -f
+
+#Run this code to use this file:
+#Usage:   make [all/clean/oclean/fclean] -f [file]
+
+
+#to make executable: make all
+all: m.h $(OBJ)
+        $(CC) $(OBJ) -o $(NAME)
+
+
+#to delete all tmp files & executable: make clean
+clean: $(RM) *~ $(OBJ)
+
+
+#to delete object files: make oclean
+oclean: $(RM) $(OBJ)
+
+
+#to delete all (tmp files, executables, & obj files make fclean
+fclean: clean oclean
+
+
+#to delete all and recompile all source files
+re: oclean all
+
