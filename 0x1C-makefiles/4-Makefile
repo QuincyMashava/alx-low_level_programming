@@ -10,7 +10,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 #to make executable:
 all: m.h $(OBJ)
-        $(CC) $(OBJ) -o $(NAME)
+$(CC) $(OBJ) -o $(NAME)
 
 
 #to delete tmp files and executable
