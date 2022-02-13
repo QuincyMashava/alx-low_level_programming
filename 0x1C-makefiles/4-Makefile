@@ -10,15 +10,17 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 #to make executable:
 all: m.h $(OBJ)
-$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 
 #to delete tmp files and executable
-clean: $(RM) *~ $(NAME)
+clean:
+	$(RM) *~ $(NAME)
 
 
 # to delete object files
-oclean: $(RM) $(OBJ)
+oclean:
+	$(RM) $(OBJ)
 
 
 #to delete all ( tmp files, executables and object files

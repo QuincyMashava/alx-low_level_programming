@@ -10,15 +10,17 @@ RM = rm -f
 
 #to make executable: make all
 all: m.h $(OBJ)
-$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 
 #to delete all tmp files & executable: make clean
-clean: $(RM) *~ $(OBJ)
+clean:
+	$(RM) *~ $(OBJ)
 
 
 #to delete object files: make oclean
-oclean: $(RM) $(OBJ)
+oclean:
+	$(RM) $(OBJ)
 
 
 #to delete all (tmp files, executables, & obj files make fclean
