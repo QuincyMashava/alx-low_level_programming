@@ -1,7 +1,7 @@
 CC = gcc
 SRC = main.c holberton.c
 OBJ = $(SRC:.c=.o)
-NAME = holberton
+NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # Usage: make [all/clean/oclean/fclean] -f [file]
@@ -11,13 +11,15 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 #to make executable
 all: m.h $(OBJ)
-$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 #to delete tmp files and executable
-clean:$(RM) *~ $(NAME)
+clean:
+	$(RM) *~ $(NAME)
 
 #to delete object files
-oclean:$(RM) $(OBJ)
+oclean:
+	$(RM) $(OBJ)
 
 
 #to delete all( executable, and object files, tmp )
